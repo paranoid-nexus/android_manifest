@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- AOSP -->
+  <remote name="aosp"
+          fetch="https://android.googlesource.com"
+          sync-c="true"
+          sync-tags="false"
+          review="https://android-review.googlesource.com/"
+          revision="refs/tags/android-15.0.0_r1" />
+
+  <!-- CLO -->
+  <remote name="clo-la"
+          fetch="https://git.codelinaro.org/clo/la"
+          sync-c="true"
+          sync-tags="false" />
+
+  <default remote="clo-la"/>
+
+  <!-- External -->
+  <remote  name="aospa"
+           fetch="https://github.com/AOSPA"
+           revision="vauxite"/>
+
+  <remote  name="aospa-blobs"
+           fetch="https://github.com/ThankYouMario"
+           revision="vauxite" />
+
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
+  <remote  name="los"
+           fetch="https://github.com/LineageOS"
+           revision="lineage-22.0" />
+
+  <!-- Nexus -->
+  <remote  name="nexus"
+           fetch="https://github.com/paranoid-nexus"
+           revision="15"/>
+
+</manifest>
