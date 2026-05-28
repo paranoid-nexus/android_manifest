@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="aospa-blobs" revision="disabled" />
+
+</manifest>

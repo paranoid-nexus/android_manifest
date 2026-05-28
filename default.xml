@@ -47,5 +47,6 @@
   <include name="obsolete.xml"/>
   <include name="nexus.xml"/>
   <include name="lineage.xml"/>
+  <include name="aospa.xml"/>
 
 </manifest>
