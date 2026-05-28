@@ -44,5 +44,6 @@
   <include name="system.xml"/>
   <include name="override.xml"/>
   <include name="vendor.xml"/>
+  <include name="obsolete.xml"/>
 
 </manifest>
