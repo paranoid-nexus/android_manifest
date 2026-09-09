@@ -42,5 +42,7 @@
            revision="15"/>
 
   <include name="system.xml"/>
+  <include name="override.xml"/>
+  <include name="vendor.xml"/>
 
 </manifest>
