@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Vendor Overrides -->  
+  <remove-project name="device/qcom/sepolicy" />
+
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils-sys" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+</manifest>
