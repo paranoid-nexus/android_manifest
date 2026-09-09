@@ -41,4 +41,6 @@
            fetch="https://github.com/paranoid-nexus"
            revision="15"/>
 
+  <include name="system.xml"/>
+
 </manifest>
