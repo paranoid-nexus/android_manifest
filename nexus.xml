@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Build -->
+  <project path="build/make" name="android_build_make" remote="nexus">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/blueprint" name="android_build_blueprint" remote="nexus" />
+  <project path="build/soong" name="android_build_soong" remote="nexus">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="art" name="android_art" remote="nexus" />
+  <project path="bionic" name="android_bionic" remote="nexus" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="nexus" />
+
+  <!-- Device -->
+  <project path="device/generic/common" name="android_device_generic_common" remote="nexus" />
+  <project path="device/nexus/sepolicy/common" name="android_device_nexus_sepolicy" remote="nexus" revision="15-common" />
+  <project path="device/nexus/sepolicy/legacy" name="android_device_nexus_sepolicy" remote="nexus" revision="15-legacy" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="nexus" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+
+  <!-- External -->
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="nexus" />
+  <project path="external/arm-trusted-firmware" name="android_external_arm-trusted-firmware" remote="nexus" />
+  <project path="external/avb" name="android_external_avb" remote="nexus" />
+  <project path="external/bouncycastle" name="android_external_bouncycastle" remote="nexus" />
+  <project path="external/dtc" name="android_external_dtc" remote="nexus" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="nexus" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="nexus" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="nexus" />
+  <project path="external/kotlinc" name="android_external_kotlinc" remote="nexus" />
+  <project path="external/kotlinx.coroutines" name="android_external_kotlinx.coroutines" remote="nexus" />
+  <project path="external/kotlinx.serialization" name="android_external_kotlinx.serialization" remote="nexus" />
+  <project path="external/mksh" name="android_external_mksh" remote="nexus" />
+  <project path="external/robolectric" name="android_external_robolectric" remote="nexus" />
+  <project path="external/setupcompat" name="android_external_setupcompat" remote="nexus" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="nexus" />
+  <project path="external/zstd" name="android_external_zstd" remote="nexus" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="nexus" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="nexus" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="nexus" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="nexus" />
+  <project path="frameworks/opt/calendar" name="android_frameworks_opt_calendar" remote="nexus" />
+  <project path="frameworks/opt/colorpicker" name="android_frameworks_opt_colorpicker" remote="nexus" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="nexus" />
+  <project path="frameworks/opt/timezonepicker" name="android_frameworks_opt_timezonepicker" remote="nexus" />
+
+  <!-- Hardware -->
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="nexus" />
+  <project path="hardware/google/camera" name="android_hardware_google_camera" remote="nexus" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="nexus" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="nexus" />
+  <project path="hardware/nexus/interfaces" name="android_hardware_nexus_interfaces" remote="nexus" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="nexus" />
+  <project path="hardware/samsung/nfc" name="android_hardware_samsung_nfc" remote="nexus" />
+  <project path="hardware/st/nfc" name="android_hardware_st_nfc" remote="nexus" />
+
+  <!-- Kernel -->
+  <project path="kernel/configs" name="android_kernel_configs" remote="nexus" />
+
+  <!-- Packages Apps -->
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="nexus" />
+  <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="nexus" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="nexus" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="nexus" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="nexus" />
+  <project path="packages/apps/EmergencyInfo" name="android_packages_apps_EmergencyInfo" remote="nexus" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="nexus" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="nexus" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nexus" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="nexus" />
+  <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="nexus" />
+  <project path="packages/apps/Tag" name="android_packages_apps_Tag" remote="nexus" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="nexus" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="nexus" />
+
+  <!-- Packages Input Methods -->
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="nexus" />
+
+  <!-- Packages Modules -->
+  <project path="packages/modules/adb" name="android_packages_modules_adb" remote="nexus" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="nexus" />
+  <project path="packages/modules/common" name="android_packages_modules_common" remote="nexus" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="nexus" />
+  <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" remote="nexus" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="nexus" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="nexus" />
+
+  <!-- Packages Providers -->
+  <project path="packages/providers/BlockedNumberProvider" name="android_packages_providers_BlockedNumberProvider" remote="nexus" />
+  <project path="packages/providers/BookmarkProvider" name="android_packages_providers_BookmarkProvider" remote="nexus" />
+  <project path="packages/providers/CalendarProvider" name="android_packages_providers_CalendarProvider" remote="nexus" />
+  <project path="packages/providers/CallLogProvider" name="android_packages_providers_CallLogProvider" remote="nexus" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="nexus" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="nexus" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="nexus" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="nexus" />
+
+  <!-- Packages Screensavers / Services / Wallpapers -->
+  <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" remote="nexus" />
+  <project path="packages/services/Mms" name="android_packages_services_Mms" remote="nexus" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="nexus" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="nexus" />
+  <project path="packages/wallpapers/LivePicker" name="android_packages_wallpapers_LivePicker" remote="nexus" />
+
+  <!-- System -->
+  <project path="system/bpf" name="android_system_bpf" remote="nexus" />
+  <project path="system/core" name="android_system_core" remote="nexus" />
+  <project path="system/extras" name="android_system_extras" remote="nexus" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="nexus" />
+  <project path="system/libziparchive" name="android_system_libziparchive" remote="nexus" />
+  <project path="system/logging" name="android_system_logging" remote="nexus" />
+  <project path="system/netd" name="android_system_netd" remote="nexus" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="nexus" />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="nexus" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="nexus" />
+  <project path="system/vold" name="android_system_vold" remote="nexus" />
+
+  <!-- Vendor -->
+  <project path="vendor/nexus" name="android_vendor_nexus" remote="nexus" />
+  <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="nexus" />
+</manifest>
