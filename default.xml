@@ -45,5 +45,6 @@
   <include name="override.xml"/>
   <include name="vendor.xml"/>
   <include name="obsolete.xml"/>
+  <include name="nexus.xml"/>
 
 </manifest>
