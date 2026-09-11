@@ -46,5 +46,6 @@
   <include name="vendor.xml"/>
   <include name="obsolete.xml"/>
   <include name="nexus.xml"/>
+  <include name="lineage.xml"/>
 
 </manifest>
