@@ -71,6 +71,7 @@
   <project path="hardware/qcom-caf/sm8450/audio/primary-hal" name="android_hardware_qcom_audio-ar" remote="los" revision="lineage-22.0-caf-sm8450" />
   <project path="hardware/qcom-caf/sm8450/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="los" revision="lineage-22.0-caf-sm8450" />
   <project path="hardware/qcom-caf/sm8450/display" name="android_hardware_qcom_display" remote="los" revision="lineage-22.0-caf-sm8450" />
+  <project path="hardware/qcom-caf/sm8450/gps" name="android_hardware_qcom_gps" remote="nexus" revision="vauxite-8450" />
   <project path="hardware/qcom-caf/sm8450/media" name="android_hardware_qcom_media" remote="los" revision="lineage-22.0-caf-sm8450" />
   <project path="hardware/qcom-caf/sm8550/audio/agm" name="android_vendor_qcom_opensource_agm" remote="los" revision="lineage-22.0-caf-sm8550" />
   <project path="hardware/qcom-caf/sm8550/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" remote="los" revision="lineage-22.0-caf-sm8550" />
@@ -78,7 +79,9 @@
   <project path="hardware/qcom-caf/sm8550/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="los" revision="lineage-22.0-caf-sm8550" />
   <project path="hardware/qcom-caf/sm8550/dataipa" name="android_vendor_qcom_opensource_dataipa" remote="los" revision="lineage-22.0-caf-sm8550" />
   <project path="hardware/qcom-caf/sm8550/display" name="android_hardware_qcom_display" remote="los" revision="lineage-22.0-caf-sm8550" />
+  <project path="hardware/qcom-caf/sm8550/gps" name="android_hardware_qcom_gps" remote="nexus" revision="vauxite-8550" /> 
   <project path="hardware/qcom-caf/sm8550/media" name="android_hardware_qcom_media" remote="los" revision="lineage-22.0-caf-sm8550" />
+  <project path="hardware/qcom-caf/gps-legacy" name="android_hardware_qcom_gps" remote="nexus" revision="vauxite-legacy-component" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="los" />
   <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="los" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="los" revision="lineage-22.0-caf" />
