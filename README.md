@@ -4,12 +4,12 @@
 
 **Initialize full repository (useful for developers)**
 ```
-repo init -u https://github.com/paranoid-nexus/android_manifest -b 15
+repo init -u https://github.com/paranoid-nexus/android_manifest -b 15 --git-lfs
 ```
 
 **If you want to save space, use this instead**
 ```
-repo init -u https://github.com/paranoid-nexus/android_manifest -b 15 --depth 1
+repo init -u https://github.com/paranoid-nexus/android_manifest -b 15 --git-lfs --depth 1
 ```
 
 ### Sync Sauce ###
