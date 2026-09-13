@@ -126,6 +126,9 @@
   <project path="system/update_engine" name="android_system_update_engine" remote="nexus" />
   <project path="system/vold" name="android_system_vold" remote="nexus" />
 
+  <!-- Tools -->
+  <project path="tools/extract_utils-qti" name="android_tools_extract_utils-qti" remote="nexus" />
+
   <!-- Vendor -->
   <project path="vendor/nexus" name="android_vendor_nexus" remote="nexus" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="nexus" />
