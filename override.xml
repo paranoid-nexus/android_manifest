@@ -46,6 +46,7 @@
 
   <remove-project name="kernel/configs" />
 
+  <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="platform/packages/apps/Camera2" />
   <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
   <remove-project name="platform/packages/apps/Contacts" />
@@ -103,6 +104,8 @@
 
   <!-- Vendor Overrides -->
   <remove-project name="device/qcom/sepolicy" />
+
+  <remove-project name="platform/vendor/codeaurora/telephony" />
 
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
   <remove-project name="platform/vendor/qcom-opensource/core-utils-sys" />

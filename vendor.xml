@@ -17,7 +17,7 @@
   <project path="device/qcom/wlan" name="android_device_qcom_wlan" remote="nexus" />
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" remote="los" revision="lineage-22.0-caf" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="los" revision="lineage-22.0-caf" />
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="los" >
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="nexus" >
     <!-- add guards for CAF repositories -->
     <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
@@ -85,7 +85,7 @@
   <project path="hardware/qcom-caf/gps-legacy" name="android_hardware_qcom_gps" remote="nexus" revision="vauxite-legacy-component" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="los" />
   <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="los" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="los" revision="lineage-22.0-caf" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="nexus" revision="lineage-22.0-caf" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="los" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" remote="los" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" remote="los" />
@@ -100,7 +100,6 @@
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="los" />
   <project path="vendor/qcom/opensource/display" name="android_vendor_qcom_opensource_display" remote="los" />
   <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="los" />
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="los" />
   <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="los" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="los" />
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="los" />
